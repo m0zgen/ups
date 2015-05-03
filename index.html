@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- begin styles -->
+        <link href="ups/css/styles.css" rel="stylesheet" type="text/css" media="all" /><!-- end styles -->
+
+        <!-- begin javascript -->
+        <script type="text/javascript" src="ups/js/ajax.js"></script><!-- end javascript -->
+        <title>Загрузка файлов</title>
+
+        <!-- custom style -->
+        <style>
+            /* logo */
+        .logo { background:url(ups/img/logo.png) no-repeat left top; width:570px; height:40px; padding:15px; margin:0; position:relative; margin:auto; display:block; }
+		
+		/* body bg */
+        #imup_body { background-color: #31373d;  padding:0; margin:80px 0; color:#333; font-size: 12px; line-height: 18px; font-family:Verdana, Tahoma,  Arial, Helvetica, sans-serif;}
+        
+        /* reset */
+        img { border:none; }
+
+        /* general input form */
+        input, textarea { font-family:Verdana, Tahoma,  Arial, Helvetica, sans-serif; font-size:14px; }
+        
+        /* content */
+        #content { background-color:#FFF; width:570px; padding:15px; margin:0; position:relative; margin:auto; }
+        </style>
+
+    </head>
+    <body id="imup_body">
+    <!-- begin logo -->
+   <!--<a href="http://forum.sys-admin.kz/" class="logo"></a><!-- end logo -->
+
+ <!-- begin content -->
+        <div id="content" class="corners">
+
+            <!-- begin form -->
+            <form action="upload.php" method="post" name="image_upload" id="image_upload" enctype="multipart/form-data">
+                <!-- begin image label and input -->
+                <label>Поддерживаемы расширения (gif, jpg, png)</label><br />
+                <input type="file" size="45" name="uploadfile" id="uploadfile" class="file margin_5_0" onchange="ajaxUpload(this.form);" /><!-- end image label and input -->
+                <br />
+                <input type="checkbox" name="tempimage" checked="checked"><label for="type1">Хранить 2 дня</label>
+                <br />
+                <!-- begin display uploaded image -->
+                <div id="upload_area" class="corners align_center">
+                    выберите изображение
+                </div><!-- begin display uploaded image -->
+            </form><!-- end form -->
+
+        </div><!-- end content -->
+
+    </body>
+</html>
