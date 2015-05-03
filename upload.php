@@ -3,15 +3,15 @@
 //----------------------------------------- start edit here ---------------------------------------------//
 //$script_location = "http://localhost/smf-base/"; // location of the script
 $script_location = "http://forum.sys-admin.kz/"; // location of the script
-$maxlimit = 5048576; // maxim image limit
+$maxlimit = 5242880; // maxim image limit
 $folderforever = "ups/images"; // folder where to save images
 $foldertmp = "ups/imagestmp"; // folder where to save images
 
 // requirements
 $minwidth = 10; // minim width
 $minheight = 10; // minim height
-$maxwidth = 3500; // maxim width
-$maxheight = 2500; // maxim height
+$maxwidth = 5000; // maxim width
+$maxheight = 5000; // maxim height
 
 //thumbnails - 1 or 0 to allow or disallow
 $thumb = 0; // allow to create thumb n.1
